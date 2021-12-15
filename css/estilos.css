@@ -14,7 +14,8 @@ body {
   margin: 0 auto;
   padding: 0.5rem;
   color: black;
-  background-color:lavender;
+  background-color:lavender
+  ;
 }
 
  html {   
@@ -26,8 +27,6 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color:
-    var(--color-header);
 }
 
 .herramientas {
