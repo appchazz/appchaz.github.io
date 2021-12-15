@@ -16,8 +16,6 @@ class MiNav extends HTMLElement {
         <li>
           <a href="index.html">
             Menu</a>
-          <a href="chat.html">
-            Chat</a>
         </li>
       </ul>`;
     this.ul =
