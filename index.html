@@ -60,33 +60,19 @@
     <p>
     </p>
    <figura-web id="hamburguesa"
-      y="100" velocidad="10">
+      y="200" velocidad="10">
    🍔
     </figura-web>
     <output id="hamburguesa"
       class="sprite">
       🍔
     </output>
-    <script>
-      const REFRESCO = 5;
-      const VELOCIDAD = 0.5;
-      let x = 10;
-      setInterval(avanza, REFRESCO);
-      function avanza() {
-        const y = window.innerHeight /2;
-        const xMáxima =
-          window.innerWidth;
-        hamburguesa.style =
-          `left: ${x}px; bottom: ${y}px`;
-        x =
-          (x + VELOCIDAD) % xMáxima;
-      }
-    </script>
+ 
     <mi-footer>
       </mi-footer>
    <script>
       setInterval(() => {
-       hamburguesa,muévete();
+       hamburguesa.muévete();
       }, 120);
     </script>
    
