@@ -64,7 +64,7 @@ p label>* {
   width: 100%;
 }
 
-sprite {
+.sprite {
    position: fixed;
     font-size: 3rem;
     }
