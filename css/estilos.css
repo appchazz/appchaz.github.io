@@ -46,11 +46,12 @@ header input {
 
 h1 {
   margin: 0.5rem 0;
+  font-family: fantasy, craked;
 }
 
 h2 {
   margin: 0.5rem 0;
-  color:orange;
+  font-family:sans-serif;
 }
 
 figure img {
