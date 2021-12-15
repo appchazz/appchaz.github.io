@@ -5,10 +5,9 @@ class FiguraWeb extends HTMLElemnt{
     this.velocidad = pareseInt(this.getAttribute("velocidad"),10);
   }
   muevete(){
-    this.style.right = `${this.x}px`;
-    this.style.top = `${this.y}px`;
-    this.x = this.x > document.documentElement.clientWidth ? 0 :
-        this.x + this.velocidad;
+     this.style.right = `${this.x}px`;
+          this.style.top = `${this.y}px`;
+          this.x = (this.x +this.velocidad) % window.innerWidth;
   }
 }
   customElements.define("figura-web", FiguraWeb);
