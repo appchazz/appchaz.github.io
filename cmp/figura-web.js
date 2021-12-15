@@ -7,7 +7,7 @@ class FiguraWeb extends HTMLElemnt{
   muevete(){
     this.style.right = `${this.x}px`;
     this.style.top = `${this.y}px`;
-    this.x = this.x <document.documentElement.clientWidth ? 0 :
+    this.x = this.x > document.documentElement.clientWidth ? 0 :
         this.x + this.velocidad;
   }
 }
