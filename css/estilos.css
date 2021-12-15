@@ -15,7 +15,7 @@ body {
   padding: 0.5rem;
   --color: grey;
   background-color:
-    var(--color: grey)
+    var(--color: grey);
 }
 
 header {
