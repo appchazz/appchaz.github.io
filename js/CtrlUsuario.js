@@ -29,6 +29,8 @@ const daoUsuario = getFirestore().
   collection("Usuario");
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
+const img = document.
+  querySelector("img");
 /** @type {HTMLUListElement} */
 const listaRoles = document.
   querySelector("#listaRoles");
