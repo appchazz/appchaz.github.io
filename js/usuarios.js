@@ -158,9 +158,6 @@ export async function
         clienteId,
         rolIds
       });
-    const avatar =
-      formData.get("avatar");
-    await subeStorage(id, avatar);
     muestraUsuarios();
   } catch (e) {
     muestraError(e);
