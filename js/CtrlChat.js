@@ -17,8 +17,6 @@ const forma = document["forma"];
 const lista = document.
   querySelector("#lista");
 
-getAuth().onAuthStateChanged(
-  protege, muestraError);
 
 /** @param {import(
     "../lib/tiposFire.js").User}
