@@ -7,9 +7,6 @@ import {
   getString,
   muestraError
 } from "../lib/util.js";
-import {
-  tieneRol
-} from "./seguridad.js";
 
 const daoMensaje = getFirestore().
   collection("Mensaje");
