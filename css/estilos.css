@@ -16,6 +16,11 @@ body {
   background-color: grey;
 }
 
+ html {   
+        color: grey;
+}
+
+
 header {
   position: -webkit-sticky;
   position: sticky;
