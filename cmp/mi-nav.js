@@ -19,8 +19,12 @@ class MiNav extends HTMLElement {
         </li>
         <li>
           <a href="chat.html">
-            chat</a>
+            Chat</a>
         </li>
+        <li>
+        <a href="sesion.html">
+          Sesion</a>
+      </li>
       </ul>`;
     this.ul =
       this.querySelector("ul");
