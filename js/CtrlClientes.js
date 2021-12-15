@@ -65,7 +65,7 @@ function htmlLista(snap) {
 function htmlFila(doc) {
   /**
    * @type {import("./tipos.js").
-                  Alumno} */
+                  Cliente} */
   const data = doc.data();
   const telefono = cod(data.telefono);
   const nombre = cod(data.nombre);
