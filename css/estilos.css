@@ -13,9 +13,12 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  --color: grey;
-  background-color: grey;
 }
+
+ html {   
+        color: lightblue;
+}
+
 
 header {
   position: -webkit-sticky;
