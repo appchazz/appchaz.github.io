@@ -13,7 +13,7 @@ import {
   tieneRol
 } from "./seguridad.js";
 
-const daoAlumno =
+const daoCliente =
   getFirestore().
     collection("Cliente");
 /** @type {HTMLFormElement} */
