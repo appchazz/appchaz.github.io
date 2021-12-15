@@ -23,7 +23,7 @@ class MiNav extends HTMLElement {
         </li>
         <li>
         <a href="sesion.html">
-          Sesion</a>
+          sesion</a>
       </li>
       </ul>`;
     this.ul =
