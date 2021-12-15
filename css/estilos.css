@@ -63,3 +63,8 @@ p label>* {
   box-sizing: border-box;
   width: 100%;
 }
+
+.sprite {
+   position: fixed;
+    font-size: 3rem;
+    }
