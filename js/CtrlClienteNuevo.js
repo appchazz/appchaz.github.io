@@ -13,7 +13,7 @@ import {
   tieneRol
 } from "./seguridad.js";
 
-const daoAlumno =
+const daoCliente =
   getFirestore().
     collection("Cliente");
 /** @type {HTMLFormElement} */
@@ -46,7 +46,7 @@ async function guarda(evt) {
     /**
      * @type {
         import("./tipos.js").
-                Alumno} */
+                Cliente} */
     const modelo = {
       telefono,
       nombre,

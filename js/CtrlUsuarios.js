@@ -20,7 +20,7 @@ const lista = document.
 const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
-const daoAlumno = firestore.
+const daoCliente = firestore.
   collection("Cliente");
 const daoUsuario = firestore.
   collection("Usuario");
@@ -115,7 +115,7 @@ async function htmlFila(doc) {
 }
 
 /** Recupera el html de un
- * alumno en base a su id.
+ * Cliente en base a su id.
  * @param {string} id */
 async function
   buscaCliente(id) {
@@ -128,7 +128,7 @@ async function
       /**
        * @type {import(
           "./tipos.js").
-            Alumno} */
+            Cliente} */
       const data = doc.data();
       return (/* html */
         `${cod(data.nombre)}`);

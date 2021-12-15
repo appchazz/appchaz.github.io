@@ -13,7 +13,7 @@ import {
   tieneRol
 } from "./seguridad.js";
 
-const daocliente =
+const daoCliente =
   getFirestore().
     collection("Cliente");
 const params =
@@ -48,7 +48,7 @@ async function busca() {
       /**
        * @type {
           import("./tipos.js").
-                  Alumno} */
+                  Cliente} */
       const data = doc.data();
       forma.telefono.value = data.telefono;
       forma.nombre.value = data.nombre || "";
@@ -83,7 +83,7 @@ async function guarda(evt) {
     /**
      * @type {
         import("./tipos.js").
-                Alumno} */
+                Cliente} */
     const modelo = {
       telefono, 
       nombre,
