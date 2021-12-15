@@ -13,7 +13,7 @@ import {
   tieneRol
 } from "./seguridad.js";
 
-const daocliente =
+const daoCliente =
   getFirestore().
     collection("Cliente");
 const params =
