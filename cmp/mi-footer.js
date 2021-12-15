@@ -7,4 +7,5 @@ class MiFooter extends HTMLElement {
       </p>`;
  }
 }
-customElements.defin("mi-footer", MiFooter);
+
+customElements.define("mi-footer", MiFooter);
