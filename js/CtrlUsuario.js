@@ -29,8 +29,6 @@ const daoUsuario = getFirestore().
   collection("Usuario");
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
-const img = document.
-  querySelector("img");
 /** @type {HTMLUListElement} */
 const listaRoles = document.
   querySelector("#listaRoles");
@@ -55,8 +53,6 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
-      img.src =
-        await urlStorage(id);
       selectClientes(
         forma.clienteId,
         data.clienteId)

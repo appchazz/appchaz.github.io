@@ -80,8 +80,6 @@ async function htmlFila(doc) {
    * @type {import("./tipos.js").
                       Usuario} */
   const data = doc.data();
-  const img = cod(
-    await urlStorage(doc.id));
   const cliente =
     await buscaCliente(
       data.clienteId);
