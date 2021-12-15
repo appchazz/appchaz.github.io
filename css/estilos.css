@@ -13,6 +13,7 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
+  color: black;
 }
 
  html {   
@@ -49,7 +50,7 @@ h1 {
 
 h2 {
   margin: 0.5rem 0;
-  --color:lightblue;
+  color:orange;
 }
 
 figure img {
