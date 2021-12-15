@@ -5,17 +5,15 @@ class MiFooter extends HTMLElement {
         &copy; 2021
         Fernando Vazquez Garcia Tello.
       </p>`;
-     ` <figura-web id="hamburguesa" y="0" velocidad="2">
+     `<figura-web id="hamburguesa" y="0" velocidad="2">
       🍔
       </figura-web>
       <script>
         setInterval(() => {
           hamburguesa.muevete();
-        },120);
-      </script>
-      }
-    setInterval(())`;
+        },120)`;
+            
+    setInterval
   }
-}
-
-customElements.define("mi-footer", MiFooter);
+ }
+customElements.defin("mi-footer", MiFooter);
