@@ -8,7 +8,6 @@
  * servidor. */
 // @ts-ignore
 firebase.initializeApp({
-  const firebaseConfig = {
     apiKey: "AIzaSyBhEmqt03Enp7OGnHFqyBu8Iggbg_b_l8Y",
     authDomain: "appchazz2.firebaseapp.com",
     projectId: "appchazz2",
