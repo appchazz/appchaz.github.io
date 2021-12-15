@@ -12,8 +12,7 @@ import {
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
 /** @type {HTMLImageElement} */
-const avatar = document.
-  querySelector("#avatar");
+
 
 /* Escucha cambios de usuario.
  * El primer parámetro es una
@@ -45,8 +44,6 @@ async function
       usuario.email || "";
     forma.nombre.value =
       usuario.displayName || "";
-    avatar.src =
-      usuario.photoURL || "";
     forma.terminarSesión.
       addEventListener(
         "click", terminaSesión);
