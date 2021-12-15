@@ -13,7 +13,8 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  --color: rgb(49, 48, 48);
+  --color: grey;
+  background-color: grey;
 }
 
 header {
@@ -66,3 +67,8 @@ p label>* {
   box-sizing: border-box;
   width: 100%;
 }
+
+.sprite {
+   position: fixed;
+    font-size: 3rem;
+    }

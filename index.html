@@ -6,6 +6,7 @@
     content="width=device-width,
        initial-scale=1.0">
   <title>Menu</title>
+   
   <!--
     Carga el núcleo de Firebase
     JS SDK
@@ -55,18 +56,32 @@
     <header>
       <h1>MENU</h1>
     </header>
-    
-    <p>
-    </p>
-    <mi-footer><figura-web id="hamburguesa" y="0" velocidad="2">
+   <h2>ENTREDAS</h2>
+      <output id="hamburguesa"
+   class="sprite">
       🍔
-      </figura-web>
-      <script>
-        setInterval(() => {
-          hamburguesa.muevete();
-        },120);
-      </script>
+    </output>
+    <script>
+      const REFRESCO = 5;
+      const VELOCIDAD = 0.5;
+      let x = 10;
+      setInterval(avanza, REFRESCO);
+      function avanza() {
+        const y = "0";
+        const xMáxima =
+          window.innerWidth;
+        hamburguesa.style =
+          `left: ${x}px; bottom: ${y}px`;
+        x =
+          (x + VELOCIDAD) % xMáxima;
+      }
+    </script>
+   
+    </script>
+    <mi-footer>
       </mi-footer>
+
+   
   </form>
 </body>
 </html>
