@@ -20,7 +20,7 @@ const lista = document.
 const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
-const daoCliente = firestore.
+const daoAlumno = firestore.
   collection("Cliente");
 const daoUsuario = firestore.
   collection("Usuario");
@@ -80,9 +80,11 @@ async function htmlFila(doc) {
    * @type {import("./tipos.js").
                       Usuario} */
   const data = doc.data();
-  const cliente =
+  const img = cod(
+    await urlStorage(doc.id));
+  const alumno =
     await buscaCliente(
-      data.clienteId);
+      data.alumnoId);
   const roles =
     await buscaRoles(data.rolIds);
   const parámetros =
@@ -90,6 +92,13 @@ async function htmlFila(doc) {
   parámetros.append("id", doc.id);
   return (/* html */
     `<li>
+      <a class="fila conImagen"
+          href=
+    "usuario.html?${parámetros}">
+        <span class="marco">
+          <img src="${img}"
+            alt="Falta el Avatar">
+        </span>
         <span class="texto">
           <strong
               class="primario">
@@ -106,7 +115,7 @@ async function htmlFila(doc) {
 }
 
 /** Recupera el html de un
- * Cliente en base a su id.
+ * alumno en base a su id.
  * @param {string} id */
 async function
   buscaCliente(id) {
@@ -119,7 +128,7 @@ async function
       /**
        * @type {import(
           "./tipos.js").
-            Cliente} */
+            cliente} */
       const data = doc.data();
       return (/* html */
         `${cod(data.nombre)}`);
