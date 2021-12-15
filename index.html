@@ -58,14 +58,26 @@
     
     <p>
     </p>
-    <mi-footer><figura-web id="hamburguesa" y="0" velocidad="2">
+    <mi-footer>
+        <output id="hamburguesa"
+      class="sprite">
       🍔
-      </figura-web>
-      <script>
-        setInterval(() => {
-          hamburguesa.muevete();
-        },120);
-      </script>
+    </output>
+    <script>
+      const REFRESCO = 5;
+      const VELOCIDAD = 0.5;
+      let x = 0;
+      setInterval(avanza, REFRESCO);
+      function avanza() {
+        const y = window.innerHeight / 2;
+        const xMáxima =
+          window.innerWidth;
+        carita.style =
+          `left: ${x}px; bottom: ${y}px`;
+        x =
+          (x + VELOCIDAD) % xMáxima;
+      }
+    </script>
       </mi-footer>
   </form>
 </body>
