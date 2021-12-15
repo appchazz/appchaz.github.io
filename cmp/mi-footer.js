@@ -6,4 +6,5 @@ class MiFooter extends HTMLElement {
         Fernando Vazquez Garcia Tello.
       </p>`;
  }
+}
 customElements.defin("mi-footer", MiFooter);
