@@ -23,7 +23,7 @@ class MiNav extends HTMLElement {
         </li>
         <li>
         <a href="sesion.html">
-          sesion</a>
+          Sesion</a>
       </li>
       </ul>`;
     this.ul =
@@ -51,7 +51,7 @@ class MiNav extends HTMLElement {
             "Administrador")) {
             html += /* html */
               `<li>
-                <a href="clientes.html">clientes</a>
+                <a href="clientes.html">Resevacion</a>
               </li>
               <li>
                 <a href="usuarios.html">Usuarios</a>
