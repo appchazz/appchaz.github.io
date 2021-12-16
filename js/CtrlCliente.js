@@ -53,7 +53,7 @@ async function busca() {
       forma.telefono.value = data.telefono;
       forma.nombre.value = data.nombre || "";
       forma.direccion.value = data.direccion || "";
-      forma.edad.value = data.edad || "";
+      forma.fecha.value = data.fecha || "";
       forma.addEventListener(
         "submit", guarda);
       forma.eliminar.
@@ -79,7 +79,7 @@ async function guarda(evt) {
         formData, "telefono").trim();  
     const nombre = getString(formData, "nombre").trim();
     const direccion = getString(formData, "direccion").trim();
-    const edad = getString(formData, "edad").trim();
+    const fecha = getString(formData, "fecha").trim();
     /**
      * @type {
         import("./tipos.js").
@@ -88,7 +88,7 @@ async function guarda(evt) {
       telefono, 
       nombre,
       direccion,
-      edad
+      fecha
     };
     await daoCliente.
       doc(id).

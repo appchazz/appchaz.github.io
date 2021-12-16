@@ -42,7 +42,7 @@ async function guarda(evt) {
         formData, "telefono").trim();  
     const nombre = getString(formData, "nombre").trim();
     const direccion = getString(formData, "direccion").trim();
-    const edad = getString(formData, "edad").trim();
+    const fecha = getString(formData, "fecha").trim();
     /**
      * @type {
         import("./tipos.js").
@@ -51,7 +51,7 @@ async function guarda(evt) {
       telefono,
       nombre,
       direccion,
-      edad 
+      fecha 
     };
     await daoCliente.
       add(modelo);

@@ -69,10 +69,10 @@ function htmlFila(doc) {
   const data = doc.data();
   const telefono = cod(data.telefono);
   const nombre = cod(data.nombre);
-  var fsf= cod(data.edad);
-  var edad = new Date(fsf);
+  var fsf= cod(data.fecha);
+  var fecha = new Date(fsf);
   var espacio="[   -   ]";
-  var dformat = [edad.getDate()+1, edad.getMonth()+1, edad.getFullYear()].join('/');
+  var dformat = [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join('/');
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);
