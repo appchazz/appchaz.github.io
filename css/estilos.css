@@ -46,6 +46,12 @@ header input {
 
 p.neg {
   font-weight: bold;
+  font-style: oblique;
+}
+
+p>em {
+  font-family: fantasy, craked;
+  font-style: oblique;
 }
 
 h1 {
